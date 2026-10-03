@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jednoduchý web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Můj web</div>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Vítejte</p>
+      <h1>Jednoduchý moderní web</h1>
+      <p>Čistá responzivní stránka vytvořená pouze pomocí HTML, CSS a JavaScriptu.</p>
+      <a class="button" href="#vice">Zjistit více</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="vice" class="section">
+      <div class="section-image">
+        <img src="obrazky/uvodni-obrazek.svg" alt="Ilustrační obrázek">
+      </div>
+      <div class="section-text">
+        <p class="eyebrow">O webu</p>
+        <h2>Jednoduchý základ, který můžete dál rozvíjet</h2>
+        <p>
+          Projekt obsahuje samostatné soubory index.html, style.css a script.js
+          a složku obrazky. Stačí rozbalit ZIP a otevřít index.html v prohlížeči.
+        </p>
+        <button id="messageButton" class="button">Kliknout</button>
+        <p id="message" class="message" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>HTML</h3>
+        <p>Struktura a obsah stránky.</p>
+      </article>
+      <article class="card">
+        <h3>CSS</h3>
+        <p>Moderní vzhled a responzivní rozložení.</p>
+      </article>
+      <article class="card">
+        <h3>JavaScript</h3>
+        <p>Jednoduchá interaktivita bez knihoven.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer id="kontakt">
+    <p>© <span id="year"></span> Můj web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
